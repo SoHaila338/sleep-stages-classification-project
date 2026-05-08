@@ -23,6 +23,13 @@ The project explores multiple model variations, data splitting strategies, and i
 - **Data augmentation** and **SMOTE** techniques tested
 - Clean, modular PyTorch implementation
 
+##  Dataset
+
+- **Source**: [MESA Sleep Dataset](https://sleepdata.org/datasets/mesa) (Multi-Ethnic Study of Atherosclerosis)
+- **Subjects**: 10 individuals
+- **Signals**: Left EOG channel (256 Hz sampling rate)
+- **Epoch Duration**: 30 seconds
+- **Classes**: Wake (0), N1 (1), N2 (2), N3 (3), REM (4)
 
 
 ## Model Architecture
@@ -37,19 +44,6 @@ The proposed **SleepClass** model consists of:
 
 
 
-##  Dataset
-
-- **Source**: [MESA Sleep Dataset](https://sleepdata.org/datasets/mesa) (Multi-Ethnic Study of Atherosclerosis)
-- **Subjects**: 10 individuals
-- **Signals**: Left EOG channel (256 Hz sampling rate)
-- **Epoch Duration**: 30 seconds
-- **Classes**: Wake (0), N1 (1), N2 (2), N3 (3), REM (4)
 
 
-##  RESULTS
 
-- Notebook, Splitting,          Imbalance Handling,      Test Accuracy
-- eog1,     Subject-wise,       Weighted Sampler,        65.95%
-- eog2,     Sampling (70-15-15),Weighted Sampler,        74.50%
-- eog3,     Subject-wise,       SMOTE,80.25%
-- eog4,     samling,            SMOTE + Label Smoothing, 82.39%
