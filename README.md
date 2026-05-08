@@ -46,26 +46,10 @@ The proposed **SleepClass** model consists of:
 - **Classes**: Wake (0), N1 (1), N2 (2), N3 (3), REM (4)
 
 
-##  Project Structure
+##  RESULTS
 
-```bash
-Sleep-Stages-Classification/
-├── data/                     # Raw EDF + XML files
-├── notebooks/
-│   ├── signals_eog1.ipynb    # Subject-wise + Weighted Sampler
-│   ├── signals_eog2.ipynb    # Random split + Time Shifting
-│   ├── signals_eog3.ipynb    # SMOTE + Subject-wise
-│   └── signals_eog4.ipynb    # SMOTE + Label Smoothing (Best)
-├── src/
-│   ├── models.py
-│   ├── dataset.py
-│   ├── preprocessing.py
-│   └── utils.py
-├── best_sleep_model.pth
-├── requirements.txt
-└── README.md
-Notebook,Splitting,Imbalance Handling,Test Accuracy
-eog1,Subject-wise,Weighted Sampler,65.95%
-eog2,Random (70-15-15),Weighted Sampler + Shifting,74.50%
-eog3,Subject-wise,SMOTE,80.25%
-eog4,Random,SMOTE + Label Smoothing,82.39%
+Notebook, Splitting,          Imbalance Handling,      Test Accuracy
+eog1,     Subject-wise,       Weighted Sampler,        65.95%
+eog2,     Sampling (70-15-15),Weighted Sampler,        74.50%
+eog3,     Subject-wise,       SMOTE,80.25%
+eog4,     samling,            SMOTE + Label Smoothing, 82.39%
