@@ -47,4 +47,4 @@ The architecture and training pipeline were iteratively optimized across four ma
 * Wafaa Hassan Sharaan
 
 **Supervision:** Dr. Ibrahim Sadek & Eng. Veronica William  
-*Biomedical Engineering - Faculty of Engineering, Helwan University / New Capital University*
+*Biomedical Engineering - Faculty of Engineering, Helwan University / Capital University*
