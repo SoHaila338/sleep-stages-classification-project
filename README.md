@@ -48,8 +48,8 @@ The proposed **SleepClass** model consists of:
 
 ##  RESULTS
 
-Notebook, Splitting,          Imbalance Handling,      Test Accuracy
-eog1,     Subject-wise,       Weighted Sampler,        65.95%
-eog2,     Sampling (70-15-15),Weighted Sampler,        74.50%
-eog3,     Subject-wise,       SMOTE,80.25%
-eog4,     samling,            SMOTE + Label Smoothing, 82.39%
+- Notebook, Splitting,          Imbalance Handling,      Test Accuracy
+- eog1,     Subject-wise,       Weighted Sampler,        65.95%
+- eog2,     Sampling (70-15-15),Weighted Sampler,        74.50%
+- eog3,     Subject-wise,       SMOTE,80.25%
+- eog4,     samling,            SMOTE + Label Smoothing, 82.39%
